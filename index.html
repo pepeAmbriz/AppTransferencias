@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/500080206e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="principal" id="Principal">
+      <h3>Transferencia</h3>
+
+      <div class="progress" id="LineaProcesos">
+        <div class="Linea"></div>
+        <div class="paso" id="PasoCantidad" position="0">
+          <span class="circular" position="0" id="spCantidad"></span>
+        </div>
+        <div class="paso" id="PasoDatos" position="1">
+          <span
+            class="circular circularNoActive"
+            position="1"
+            id="spDatos"
+          ></span>
+        </div>
+        <div class="paso" id="PasoMetodo" position="2">
+          <span
+            class="circular circularNoActive"
+            position="2"
+            id="spMetodo"
+          ></span>
+        </div>
+        <div class="paso" id="PasoTransferencia" position="3">
+          <span
+            class="circular circularNoActive"
+            position="3"
+            id="spTransferencia"
+          ></span>
+        </div>
+        <div class="textos">
+          <span class="texto">Cantidad</span>
+          <span class="texto datos">Datos</span
+          ><span class="texto metodo">Metodo</span
+          ><span class="texto">Transferencia</span>
+        </div>
+      </div>
+
+      <section id="Data" class="data"></section>
+      <div id="btnCambios">
+        <button class="btnSiguiente" id="btnSiguiente" position="0">
+          Siguiente <i class="fa-solid fa-arrow-right" id="btnSiguiente"></i><br>
+         
+        </button>
+        <button class="btnTransferencia btnNoActive" id="btnTransferir" position="0">
+          Transferir <i class="fa-solid fa-arrow-right">
+           
+          </i></button>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="index.js"></script>
+</html>

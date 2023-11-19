@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(10, 0, 40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 13px;
+}
+
+.principal {
+  /*   border: 1px solid white; */
+  height: 330px;
+  width: 490px;
+  background-color: rgba(242, 240, 250, 0.052);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress {
+  width: 90%;
+  height: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  position: relative;
+}
+.Linea {
+  border: 1px solid rgb(196, 196, 2);
+  width: 99%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.paso {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -15px;
+  left: -1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(196, 196, 2, 0.886);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textos {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  position: absolute;
+  top: 20px;
+  width: 99%;
+
+  .datos {
+    position: relative;
+    left: 10px;
+  }
+  .metodo {
+    position: relative;
+    left: 30px;
+  }
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+}
+.circular {
+  padding: 5px;
+  width: 5px;
+  height: 5px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.circularNoActive {
+  display: none;
+}
+.checklist {
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+}
+.Cantidad {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  /* border: 1px solid white; */
+}
+
+.Cantidad > p {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.iptCantidad {
+  border: 1px solid red;
+  background-color: transparent;
+  height: 30px;
+  outline: 1px solid rgba(238, 234, 228, 0.262);
+  border: none;
+  margin-top: 5px;
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes entrada {
+  from {
+    box-shadow: inset 90px 0 0 0 rgba(0, 0, 0, 0.322);
+  }
+  to {
+    box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, 0.322);
+  }
+}
+
+.btnSiguiente {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btnSiguiente:hover {
+  background-color: rgba(255, 255, 0, 0.723);
+}
+.btnTransferencia {
+  animation: entrada 3s;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btnTransferencia:hover{
+  background-color: rgba(255, 255, 0, 0.723);
+}
+
+
+.Datos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  /* border: 1px solid ; */
+}
+.formReceptor {
+  display: flex;
+  flex-direction: column;
+  /*   justify-content: center; */
+  align-items: center;
+}
+.lables {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  width: 100%;
+}
+.lables > label {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.formtext {
+  display: flex;
+  width: 100%;
+}
+.inputDatos {
+  width: auto;
+  border: 0;
+  outline: 1px solid rgba(255, 255, 255, 0.322);
+  background-color: transparent;
+  height: 30px;
+  margin: 5px;
+  text-align: center;
+  color: white;
+}
+
+.Metodo {
+  /*  border: 1px solid; */
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+.Metodo h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.btnRadios {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnRadios > label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid rgba(255, 255, 255, 0.296);
+  height: 30px;
+  width: 150px;
+}
+
+.radio .check {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check {
+  margin-right: 5px;
+}
+.radioActive {
+  background-color: yellow;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.Transferencia {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+.Transferencia p {
+  margin: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.Transferencia span {
+  font-weight: 100;
+}
+
+.lblError {
+  display: none;
+}
+.lblErrorActive {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.inputError {
+  outline: 1px solid red;
+  color: red;
+}
+
+.formDatos {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid red; */
+  width: 400px;
+  justify-content: center;
+  gap: 10px;
+}
+.inputLbl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnNoActive {
+  display: none;
+}
+
